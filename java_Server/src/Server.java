@@ -102,7 +102,7 @@ class ServerRunable implements Runnable{
 			
         	
 			count++;
-			log("ÇöÀç Á¢¼Ó ÁßÀÎ Å¬¶óÀÌ¾ğÆ® ¼ö: " + count);
+			log("connecting count: " + count);
 			
 								
 	        new Receiver(mStreamConnection).start();
@@ -173,8 +173,8 @@ class ServerRunable implements Runnable{
 	    		boolean isDisconnected = false;
 	    		StringBuilder imageStringBuilder = null;
 	    		
-				Sender( "¼­¹ö Á¢¼Ó ¿Ï·á");
-				Sender( "ÀÌ¹ÌÁö¸¦ ¼±ÅÃÇÏ¼¼¿ä");
+				Sender( "ì„œë²„ ì ‘ì† ì™„ë£Œ");
+				Sender( "ì´ë¯¸ì§€ë¥¼ ì„ íƒí•˜ì„¸ìš”");
 	    		
 				while(true){
 
@@ -192,7 +192,7 @@ class ServerRunable implements Runnable{
 							log("Client has been disconnected");
 							
 							count--;
-							log("ÇöÀç Á¢¼Ó ÁßÀÎ Å¬¶óÀÌ¾ğÆ® ¼ö: " + count);
+							log("í˜„ì¬ ì ‘ì† ì¤‘ì¸ í´ë¼ì´ì–¸íŠ¸ ìˆ˜: " + count);
 							
 							isDisconnected = true;
 							Thread.currentThread().interrupt();
@@ -237,7 +237,7 @@ class ServerRunable implements Runnable{
 			    		fos.close();
 			    		
 			    		recvImage = false;
-			    		recvMessage = "ÀÌ¹ÌÁö Àü¼Û ¿Ï·á";
+			    		recvMessage = "ì´ë¯¸ì§€ ì „ì†¡ ì™„ë£Œ";
 			        }
 			        
 
