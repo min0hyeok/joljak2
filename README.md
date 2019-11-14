@@ -1,6 +1,3 @@
 # joljak2
 
-Java_Server\scan_eng
-Java_Server\scan_kor
-Java_Server\eng_kor
-실ㅇ행
+Java_Server\py 실행
